@@ -7,10 +7,10 @@ const tekken8 = "/imgs/tekken8.webp";
 export default async function LandingCarousel() {
   return (
     <div>
-      <div className="opacity-60 w-full carousel rounded-box">
+      <div className="w-full carousel rounded-box">
         <div id="slide1" className="carousel-item relative w-full">
           <div
-            className="min-h-screen w-full bg-center bg-no-repeat bg-cover"
+            className="min-h-screen w-full bg-center bg-no-repeat bg-cover flex justify-center items-center"
             style={{ backgroundImage: "url(" + baldursgate3 + ")" }}
           ></div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -24,7 +24,7 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <div
-            className="min-h-screen w-full bg-center bg-no-repeat bg-cover"
+            className="min-h-screen w-full bg-center bg-no-repeat bg-cover flex justify-center items-center"
             style={{ backgroundImage: "url(" + cyberpunk2077 + ")" }}
           ></div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -38,7 +38,7 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <div
-            className="min-h-screen w-full bg-center bg-no-repeat bg-cover"
+            className="min-h-screen w-full bg-center bg-no-repeat bg-cover flex justify-center items-center"
             style={{ backgroundImage: "url(" + eldenring + ")" }}
           ></div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -52,7 +52,7 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <div
-            className="min-h-screen w-full bg-center bg-no-repeat bg-cover"
+            className="min-h-screen w-full bg-center bg-no-repeat bg-cover flex justify-center items-center"
             style={{ backgroundImage: "url(" + princeofpersia + ")" }}
           ></div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -66,7 +66,7 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide5" className="carousel-item relative w-full">
           <div
-            className="min-h-screen w-full bg-center bg-no-repeat bg-cover"
+            className="min-h-screen w-full bg-center bg-no-repeat bg-cover flex justify-center items-center"
             style={{ backgroundImage: "url(" + tekken8 + ")" }}
           ></div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

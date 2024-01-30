@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-10 bg-neutral backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-800">
+    <nav className="sticky w-full top-0 z-10 bg-neutral backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-800">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-5">
         <div className="flex justify-center items-center">
           <div className="dropdown">
@@ -34,14 +34,14 @@ export default function Navbar() {
                 <a>Homepage</a>
               </li>
               <li>
-                <a>Portfolio</a>
+                <a>Game Library</a>
               </li>
               <li>
                 <a>About</a>
               </li>
             </ul>
           </div>
-          <Link href="/" className="btn btn-ghost text-xl">
+          <Link href="/" className="btn btn-primary text-xl">
             gamelib
           </Link>
         </div>
