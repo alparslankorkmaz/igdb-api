@@ -4,10 +4,9 @@ import LandingCarousel from "./components/LandingCarousel";
 export default async function Home() {
   return (
     <>
-      <div className="h-screen overflow-hidden">
+      <main className="max-w-7xl mx-auto">
         <LandingCarousel />
-      </div>
-      <main className="max-w-7xl mx-auto"></main>
+      </main>
     </>
   );
 }
