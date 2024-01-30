@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Link from "next/link";
+import LandingCarousel from "./components/LandingCarousel";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <main>
-      <p>home</p>
-    </main>
+    <>
+      <div className="h-screen overflow-hidden">
+        <LandingCarousel />
+      </div>
+      <main className="max-w-7xl mx-auto"></main>
+    </>
   );
 }
