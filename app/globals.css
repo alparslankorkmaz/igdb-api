@@ -10,3 +10,23 @@ body::-webkit-scrollbar {
 html {
   scrollbar-width: none;
 }
+
+/* Rating styles */
+
+@layer base {
+  .bad-rating {
+    @apply border-bad-rating shadow-bad-rating;
+  }
+  .mediocre-rating {
+    @apply border-mediocre-rating shadow-mediocre-rating;
+  }
+  .average-rating {
+    @apply border-average-rating shadow-average-rating;
+  }
+  .good-rating {
+    @apply border-good-rating shadow-good-rating;
+  }
+  .very-good-rating {
+    @apply border-very-good-rating shadow-very-good-rating;
+  }
+}

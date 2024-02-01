@@ -5,7 +5,7 @@ export default async function getHighRatedGames() {
       "Client-ID": "wsp6cdy9zulz95dwbf7232a3ountc9",
       Authorization: "Bearer lzkfmk9ga2crj19d6arpxmw9wbopsz",
     },
-    body: "limit 100; fields id,name,cover.image_id,screenshots.image_id,slug,rating,first_release_date,genres.*,involved_companies,platforms; where rating > 80 & rating_count > 100 & category = 0;  sort rating desc; ",
+    body: "limit 100; fields id,name,cover.image_id,screenshots.image_id,slug,rating,first_release_date,genres.*,involved_companies,platforms; where rating_count > 100 & category = 0;  sort rating desc; ",
   });
 
   if (!res.ok) {

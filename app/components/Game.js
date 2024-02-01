@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RatingDisplay from "./RatingDisplay";
 
 export default function Game({ ...props }) {
   return (
@@ -10,11 +11,11 @@ export default function Game({ ...props }) {
         />
       </Link>
       <div className="">
-        <div className="flex justify-between items-center">
-          <Link href={`/${props.slug}`} className="">
+        <div className="flex justify-between">
+          <Link href={`/${props.slug}`} className="w-2/3">
             {props.name}
           </Link>
-          <div className=" ">{Math.floor(props.rating)}</div>
+          <RatingDisplay rating={props.rating} />
         </div>
       </div>
     </div>
