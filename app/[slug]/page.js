@@ -1,7 +1,7 @@
 import getSingleGameData from "@/app/lib/getSingleGameData";
 
 export default async function page({ params }) {
-  const data = await getSingleGameData(params.id);
+  const data = await getSingleGameData(params.slug);
 
   return (
     <>

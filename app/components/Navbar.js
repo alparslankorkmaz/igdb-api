@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky w-full top-0 z-10 bg-neutral backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-800">
+    <nav className="sticky w-full top-0 z-10 bg-neutral backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-800 rounded-box">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-5">
-        <div className="flex justify-center items-center">
+        <div className="flex md:gap-3 justify-center items-center">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -31,13 +31,13 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Homepage</a>
+                <Link href="/">Homepage</Link>
               </li>
               <li>
-                <a>Game Library</a>
+                <Link href="/top-100-games">Top 100 Games</Link>
               </li>
               <li>
-                <a>About</a>
+                <Link href="/">About</Link>
               </li>
             </ul>
           </div>
