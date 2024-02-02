@@ -6,14 +6,10 @@ const tekken8 = "/imgs/tekken8.webp";
 
 import Link from "next/link";
 import { SlBadge } from "react-icons/sl";
-import searchGame from "../lib/searchGame";
 
 export default async function LandingCarousel() {
-  // const data = await searchGame();
-  // console.log(data);
-
   return (
-    <div className="flex flex-col md:flex-row gap-10 md:gap-0 flex-wrap items-center justify-between my-10">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-5 flex-wrap items-center justify-center my-10">
       <div className="flex flex-col justify-center items-center gap-5">
         <h1 className="font-bold text-3xl md:text-4xl uppercase">
           editor's pick
@@ -39,6 +35,7 @@ export default async function LandingCarousel() {
             </a>
           </div>
         </div>
+
         <div id="slide2" className="carousel-item relative w-full">
           <div
             className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"

@@ -14,10 +14,6 @@ const templateStyle = {
   marginRight: "auto",
 };
 
-export function Loading() {
-  return <span className="loading loading-ball loading-lg"></span>;
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
