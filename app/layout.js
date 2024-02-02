@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,13 +16,11 @@ const templateStyle = {
 
 export default function RootLayout({ children }) {
   return (
-    <SkeletonTheme>
-      <html lang="en">
-        <body style={templateStyle} className={inter.className}>
-          <Navbar />
-          {children}
-        </body>
-      </html>
-    </SkeletonTheme>
+    <html lang="en">
+      <body style={templateStyle} className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
+    </html>
   );
 }

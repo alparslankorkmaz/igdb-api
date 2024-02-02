@@ -14,7 +14,7 @@ export default async function HighRatedGames() {
             <div className="md:w-1/6 ">
               <Game {...props} />
             </div>
-            <div className="flex flex-col gap-5 md:w-4/6 ">
+            <div className="bg-neutral p-3 rounded-box flex flex-col gap-5 md:w-4/6 ">
               <h3>Storyline</h3>
               {props.storyline ? (
                 <p>{props.storyline}</p>
