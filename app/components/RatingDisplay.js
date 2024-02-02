@@ -26,7 +26,7 @@ export default function RatingDisplay({ rating }) {
     <div
       className={`${getColor(
         flooredRating
-      )} border-2 shadow-inner size-6 shrink-0 grow-0 rounded-full flex justify-center items-center p-3 text-xs text-white font-semibold`}
+      )} border shadow-inner size-6 shrink-0 grow-0 rounded-full flex justify-center items-center p-3 text-xs text-white font-light`}
     >
       {flooredRating}
     </div>

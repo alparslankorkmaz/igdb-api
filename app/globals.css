@@ -14,6 +14,26 @@ html {
 /* Rating styles */
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+
   .bad-rating {
     @apply border-bad-rating shadow-bad-rating;
   }
@@ -29,4 +49,12 @@ html {
   .very-good-rating {
     @apply border-very-good-rating shadow-very-good-rating;
   }
+}
+
+.listed-game-card {
+  @apply flex flex-wrap gap-5 shadow-lg shadow-neutral rounded-box border border-neutral p-5;
+}
+
+.listed-game-number {
+  @apply border glass size-10 shrink-0 grow-0 rounded-full flex justify-center items-center p-3 text-white font-bold;
 }

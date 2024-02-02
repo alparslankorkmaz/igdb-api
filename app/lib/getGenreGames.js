@@ -1,12 +1,11 @@
-export default async function getHighRatedGames() {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+export default async function getGenreGames(slug) {
   const res = await fetch("https://api.igdb.com/v4/games/", {
     method: "POST",
     headers: {
       "Client-ID": "wsp6cdy9zulz95dwbf7232a3ountc9",
       Authorization: "Bearer lzkfmk9ga2crj19d6arpxmw9wbopsz",
     },
-    body: "limit 100; fields id,name,cover.image_id,storyline,screenshots.image_id,slug,rating,first_release_date,genres.*,involved_companies.*,platforms; where rating_count > 100 & category = 0; sort rating desc; ",
+    body: `limit 20; fields id,name,cover.image_id,screenshots.image_id,slug,rating,first_release_date,genres.*,involved_companies.*,platforms; where genres.slug = "${slug}" & category = 0; sort popularity desc;`,
   });
 
   if (!res.ok) {
