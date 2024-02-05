@@ -7,7 +7,7 @@ export default async function page({ params }) {
     <>
       {data.map((game) => {
         return (
-          <div>
+          <div key={game.id}>
             <h1>{game.name}</h1>
             <p>{game.storyline}</p>
           </div>

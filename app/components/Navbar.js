@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky w-full top-0 z-10 bg-neutral backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-800 rounded-box">
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-5">
-        <div className="flex md:gap-3 justify-center items-center">
+    <nav className="sticky top-0 z-40 w-full rounded-box border-b border-gray-800 bg-neutral bg-opacity-30 backdrop-blur-lg backdrop-filter">
+      <div className="mx-auto flex max-w-7xl items-center justify-between py-5">
+        <div className="flex items-center justify-center md:gap-3">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn btn-circle btn-ghost"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
             >
               <li>
                 <Link href="/">Homepage</Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
               className="input input-bordered w-24 md:w-auto"
             />
           </div>
-          <button className="btn btn-ghost btn-circle">
+          <button className="btn btn-circle btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
