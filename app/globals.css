@@ -50,11 +50,3 @@ html {
     @apply border-very-good-rating shadow-very-good-rating;
   }
 }
-
-.listed-game-card {
-  @apply flex flex-wrap gap-5 shadow-lg shadow-neutral rounded-box border border-neutral p-5;
-}
-
-.listed-game-number {
-  @apply border glass size-10 shrink-0 grow-0 rounded-full flex justify-center items-center p-3 text-white font-bold;
-}

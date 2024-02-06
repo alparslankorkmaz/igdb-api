@@ -11,9 +11,9 @@ export default function Game({ ...props }) {
   return (
     <div key={props.id} className="group">
       {/* CARD ABOVE */}
-      <div className="group relative duration-200 lg:group-hover:z-20">
+      <div className="group relative duration-500 lg:group-hover:z-20">
         {/* CARD UNDER */}
-        <div className="group absolute top-0 -z-10 hidden h-fit w-36 rounded-l-badge bg-neutral p-3 duration-200 lg:group-hover:block lg:group-hover:-translate-x-10">
+        <div className="group absolute -left-3 top-0 -z-10 hidden h-fit w-36 bg-neutral p-3 duration-500 lg:group-hover:block">
           <div className="flex h-full flex-col justify-evenly gap-5">
             <p className="badge badge-secondary text-sm font-semibold">
               {releaseDate}
@@ -34,7 +34,7 @@ export default function Game({ ...props }) {
         </div>
         {/* CARD UNDER ENDS */}
 
-        <div className="group relative overflow-hidden rounded-box duration-200 lg:group-hover:translate-x-24">
+        <div className="group relative overflow-hidden rounded-t-box duration-500 lg:group-hover:translate-x-32 lg:group-hover:rounded-none">
           <div>
             {/* ICY GLASS BG IMAGE */}
             <img
@@ -54,11 +54,11 @@ export default function Game({ ...props }) {
               />
             </Link>
 
-            <div className="flex min-h-20 flex-col justify-evenly p-2">
-              <div className="flex items-center justify-between lg:group-hover:glass lg:group-hover:p-2">
+            <div className="flex min-h-20 flex-col justify-evenly p-2 lg:group-hover:glass">
+              <div className="flex items-center justify-between ">
                 <Link
                   href={`/${props.slug}`}
-                  className="w-2/3 text-sm text-white"
+                  className="w-2/3 text-white lg:text-sm"
                 >
                   {props.name}
                 </Link>
