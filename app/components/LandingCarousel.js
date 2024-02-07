@@ -9,24 +9,24 @@ import { SlBadge } from "react-icons/sl";
 
 export default async function LandingCarousel() {
   return (
-    <div className="flex flex-col md:flex-row gap-10 md:gap-5 flex-wrap items-center justify-center my-10">
-      <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="font-bold text-3xl md:text-4xl uppercase">
+    <div className="my-10 flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row md:gap-5">
+      <div className="flex flex-col items-center justify-center gap-5">
+        <h1 className="text-3xl font-bold uppercase md:text-4xl">
           editor's pick
         </h1>
-        <SlBadge className="text-primary size-10 md:size-16" />
+        <SlBadge className="size-10 text-primary md:size-16" />
       </div>
-      <div className="w-full md:w-[60rem] h-[30rem] carousel rounded-box">
+      <div className="carousel h-[30rem] w-full rounded-box md:w-[60rem]">
         <div id="slide1" className="carousel-item relative w-full">
           <div
-            className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"
+            className="flex w-full items-end justify-center bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url(" + baldursgate3 + ")" }}
           >
-            <Link className="btn glass z-10 m-3" href="/games/baldurs-gate-3">
+            <Link className="btn glass z-10 m-3" href="/baldurs-gate-3">
               view game
             </Link>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle">
               ❮
             </a>
@@ -38,15 +38,15 @@ export default async function LandingCarousel() {
 
         <div id="slide2" className="carousel-item relative w-full">
           <div
-            className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"
+            className="flex w-full items-end justify-center bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url(" + cyberpunk2077 + ")" }}
           >
             {" "}
-            <Link className="btn glass z-10 m-3" href="/games/cyberpunk-2077">
+            <Link className="btn glass z-10 m-3" href="/cyberpunk-2077">
               view game
             </Link>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide1" className="btn btn-circle">
               ❮
             </a>
@@ -57,15 +57,15 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <div
-            className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"
+            className="flex w-full items-end justify-center bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url(" + eldenring + ")" }}
           >
             {" "}
-            <Link className="btn glass z-10 m-3" href="/games/elden-ring">
+            <Link className="btn glass z-10 m-3" href="/elden-ring">
               view game
             </Link>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide2" className="btn btn-circle">
               ❮
             </a>
@@ -76,18 +76,18 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <div
-            className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"
+            className="flex w-full items-end justify-center bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url(" + princeofpersia + ")" }}
           >
             {" "}
             <Link
               className="btn glass z-10 m-3"
-              href="/games/prince-of-persia-the-lost-crown"
+              href="/prince-of-persia-the-lost-crown"
             >
               view game
             </Link>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
@@ -98,15 +98,15 @@ export default async function LandingCarousel() {
         </div>
         <div id="slide5" className="carousel-item relative w-full">
           <div
-            className="w-full bg-center bg-no-repeat bg-cover flex justify-center items-end"
+            className="flex w-full items-end justify-center bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url(" + tekken8 + ")" }}
           >
             {" "}
-            <Link className="btn glass z-10 m-3" href="/games/tekken-8">
+            <Link className="btn glass z-10 m-3" href="/tekken-8">
               view game
             </Link>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle">
               ❮
             </a>

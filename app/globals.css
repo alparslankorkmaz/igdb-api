@@ -11,6 +11,11 @@ html {
   scrollbar-width: none;
 }
 
+/* prevent carousel jolting */
+html {
+  scroll-padding-top: 8rem;
+}
+
 /* Rating styles */
 
 @layer base {
