@@ -1,11 +1,11 @@
-export default async function searchGame() {
+export default async function getPopularGames() {
   const res = await fetch("https://api.igdb.com/v4/games/", {
     method: "POST",
     headers: {
       "Client-ID": "wsp6cdy9zulz95dwbf7232a3ountc9",
       Authorization: "Bearer lzkfmk9ga2crj19d6arpxmw9wbopsz",
     },
-    body: `fields slug; where id = 252476;`,
+    body: "limit 20; fields id,name,cover.image_id,slug,rating; where category = 0 & rating_count > 700; sort popularity desc; ",
   });
 
   if (!res.ok) {

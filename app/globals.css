@@ -19,6 +19,9 @@ html {
 /* Rating styles */
 
 @layer base {
+  body {
+    @apply px-2;
+  }
   h1,
   h2,
   h3,

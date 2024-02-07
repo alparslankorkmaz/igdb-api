@@ -1,14 +1,14 @@
 import Link from "next/link";
 import RatingDisplay from "./RatingDisplay";
-export default function GameSmall({ topTwenty }) {
+export default function GameSmall({ topTen }) {
   return (
     <>
-      {topTwenty.map((game) => {
+      {topTen.map((game) => {
         return (
           <Link
             href={`/${game.slug}`}
             key={game.id}
-            className="flex items-center justify-between border-b border-neutral p-3 last:border-none hover:bg-base-300"
+            className="flex items-center justify-between gap-5 border-b border-neutral p-3 last:border-none hover:bg-base-300"
           >
             <div className="flex items-center gap-3">
               <img
@@ -18,7 +18,7 @@ export default function GameSmall({ topTwenty }) {
                 className="w-10"
               />
 
-              <div className="w-10/12">{game.name}</div>
+              <div>{game.name}</div>
             </div>
             <RatingDisplay rating={game.rating} />
           </Link>
